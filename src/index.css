@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.card{
+ justify-content: center;
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: row;
+text-align: center;
+background-color: rgb(210, 212, 214);
+}
+.main{
+  margin-top: 4%;
+  width: 25%;
+height: 80%;
+  background-color: white;
+box-shadow: 5px 5px 25px -5px rgb(99, 98, 98);
+overflow: hidden;
+}
+h1{
+  color: beige;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 6px 0px 5px 0px;
+  background-color: rgb(243, 185, 98);
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0,0.3);
+  transition: all ease 1s;
+ }
+h1:hover {
+  scale: 1.1;
+}
+input{
+  text-align: center;
+  height: 35px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid rgb(243, 185, 98);
+  outline:none;
+  background-color:white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.additem{
+  margin-left: 15px;
+  padding: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.additem:hover {
+  background-color: rgb(202, 235, 152);
+}
+.item-body{
+  text-align: left;
+  max-height: 400px; 
+  overflow: auto;
+  background-color:white;
+}
+.items{
+margin-top:30px ;
+margin-left: 40px;
+margin-bottom: 20px;
+font-size: 20px;
+}
+.list{
+  list-style-type: none;
+}
+.delete{
+  margin-right: 10px;
+  
+    margin-left: 15px;
+    padding: 6px;
+}
+.delete:hover {
+  background-color: rgb(245, 114, 114);
 }
